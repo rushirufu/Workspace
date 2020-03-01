@@ -6,4 +6,4 @@ A .gitignore file is a plain text file in which each line contains a pattern for
 
 `.gitignore`
 Ignore the node_modules directory
-`node_modules/`
+`node_modules/ logs/ *.log`
