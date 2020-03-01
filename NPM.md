@@ -2,7 +2,7 @@
 `npm install yarn -g`
 
 ## Iniciar un nuevo proyecto
-`yarn init`
+`yarn init --yes`
 
 ## Agregando dependencias
 `yarn add [PackageName]
