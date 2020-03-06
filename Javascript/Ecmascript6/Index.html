@@ -3,47 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script>
-      // Scope
-      // El ambito de un variable (llamado en ingles "scope") en la zona del programa
-      // en la que se define una varible
-      // Javascript define 2 ambitos Glogal y funcion o bloque
-
-      // var scope
-      // Caracteristica #1
-      // Podemos re declarar variables con var
-      var edad = 18;
-      if (edad === 18) {
-        var esAdulto = true;
-      }
-      console.log(".Es Adulto: " + esAdulto);
-      // != 18
-      var edad = 16;
-      if (edad === 18) {
-        var esAdulto = true;
-      } else {
-        esAdulto = false;
-      }
-      console.log("..Es Adulto: " + esAdulto);
-
-      function Salular() {
-        var mensaje = "Hello World";
-      }
-
-      console.log(mensaje);
-
-      // Caracteristica #2
-      // const y let tiene un scope de bloque o funcion
-
-      //   var edad = 16;
-      //   if (edad === 18) {
-      //     var esAdulto = true;
-      //   } else {
-      //     var esAdulto = false;
-      //   }
-      //   console.log("Es Adulto: " + esAdulto);
-    </script>
+    <title>Ecmascript 6</title>
+    <script src="./001Variables.js"></script>
+    <script src="./002TemplateStrings.js"></script>
   </head>
   <body></body>
 </html>
