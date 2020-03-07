@@ -18,3 +18,16 @@ console.log(esMayorDeEdad);
 
 var entrada = prompt("cual es tu nombre");
 console.log(entrada);
+///////////////////////
+if (true) {
+  var name = "Matt";
+  console.log(name);
+}
+console.log(name); // Matt
+if (true) {
+  let age = 26;
+  console.log(age);
+}
+console.log(age); // 26
+// Matt
+// ReferenceError: age is not defined

@@ -120,3 +120,8 @@ console.log(`+null = ${unarioMas}`);
  *  Operadores relacionales
  *
  */
+function test() {
+  messageeeeeeeeeee = "hi"; // global variable
+}
+test();
+console.log(messageeeeeeeeeee); // "hi"
