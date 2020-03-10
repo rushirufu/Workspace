@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //
+      //
+      /*
+                      Var declaration
+            */
+      //
+      // var se definine como una funcion scope
+      //
+      function pruebaA() {
+        var mensajeA = "Hola!"; // local variable
+      }
+      pruebaA();
+      //console.log(mensajeA); // error! message is not defined
+
+      function pruebaB() {
+        // Forma correcta
+        var mensajeB = "Hola mundo";
+        console.log(mensajeB);
+      }
+      pruebaB();
+      //
+      //
+      /*
+                      let declaration
+             */
+      // let se define como una variable block scope
+      //
+
+      if (true) {
+        var name = "Javascript"; // VAR
+        console.log(name); // Salida Javascript
+      }
+      console.log(name); // Salida Javascript
+
+      if (true) {
+        let age = 26; // LET
+        console.log(age);
+      }
+      //console.log(age); // 26 ReferenceError: age is not defined
+      // la variable de destruye al salir del bloque {}
+      function pruebaLET() {
+        let pruebaLet = "WTF";
+        console.log(pruebaLet);
+      }
+      //console.log(pruebaLet); ////Uncaught ReferenceError: pruebaLet is not defined
+      pruebaLET();
+
+      //
+      //
+      /*
+                      const Declaration
+            const se comporta de manera idéntica a let, pero con una diferencia importante: debe inicializarse
+            con un valor, y ese valor no se puede redefinir después de la declaración. Intentando modificar una constante
+            La variable dará como resultado un error de tiempo de ejecución.
+      */
+      //
+      const edad = 26;
+      console.log(`const edad = ${edad}`);
+      //edad = 36; // TypeError: Assignment to constant variable. No se puede modificar.
+      console.log(`Intento de modificar la variable const edad = ${edad}`);
+      //
+      // const no permite declarar variables con un nombre existente
+      const nombre = "Matt";
+      //const nombre = "Nicholas"; // SyntaxError
+      //
+      // una const matiene scoped blocks
+      const nombreConst = "Matt";
+      if (true) {
+        const nombreConst = "Nicholas";
+        console.log(
+          `Prueba variable const nombre dentro del bloque: ${nombreConst}`
+        ); // Nicholas
+      }
+      console.log(
+        `Prueba variable const nombre fuera del bloque: ${nombreConst}` // Matt
+      );
+
+      //
+      //
+      /*
+                    Global declarations
+      */
+      //
+      //
+
+      var globalVarA = "Samsung"; // Salida Samsung
+      let globalVarB = "Apple"; // salida undefined
+      console.log(window.globalVarA);
+      console.log(window.globalVarB);
+
+      //
+      //
+      /*
+                    Data Types - Tipos de datos
+      */
+      //
+      //
+
+      //  "undefined" if the value is undefined
+      //  "boolean" if the value is a Boolean
+      //  "string" if the value is a string
+      //  "number" if the value is a number
+      //  "object" if the value is an object (other than a function) or null
+      //  "function" if the value is a function
+      //  "symbol" if the value is a Symbol
+
+      //    undefined
+      let noDefinido;
+      if (noDefinido == undefined) {
+        console.log(`Variable no definida:  ${typeof noDefinido}`);
+      }
+      if (true) {
+        let noDefinido = undefined;
+        console.log(`no definida:  ${typeof noDefinido}`);
+      }
+
+      //    object
+      let car = null;
+      console.log(`Carro:  ${typeof car}`);
+      if (car != null) {
+        // Has algo...
+      }
+      if (null == undefined) {
+        console.log(`Es verdad`);
+      }
+      //
+      if (null === undefined) {
+        console.log(`v2.0: Es verdad`);
+      } else {
+        console.log(`v2.0: Es mentira`);
+      }
+
+      //    Boolean
+      let encontrado = true;
+      let perdido = false;
+
+      //    Number
+      let numeroA = 100; // Intenger
+      let numeroB = 070; // Octal
+      let numeroC = 0xa; // Hexadecimal
+      let numeroD = 1.1; // floating-point value
+      let numeroE = 0.1; // floating-point value
+
+      //    NaN - Not a Number
+      console.log(`NaN: ` + isNaN(10)); // Salida FALSO - 10 es un numero
+
+      // String
+      let estoEsUnString = "Esto es un string";
+    </script>
+  </body>
+</html>

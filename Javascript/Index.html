@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./src/scripts/001Variables.js"></script>
+    <title>Javascript</title>
   </head>
-  <body></body>
+  <body>
+    <p id="imprimir1"></p>
+    <p id="imprimir2"></p>
+  </body>
+  <script>
+    var prueba = "prueba";
+    document.write("hello world");
+    // Forma de imprimir numero 1
+    var elementoHTML1 = document.getElementById("imprimir1");
+    elementoHTML1.textContent = "Forma de imprimir  N 1";
+
+    // Forma de imprimir numero 2
+    var elementoHTML2 = document.getElementById("imprimir2");
+    elementoHTML2.innerText = "Forma de imprimir N 2";
+  </script>
 </html>
+iteramos.com/pregunta/73393/diferencia-entre-innertext-y-innerhtml-en-javascript
