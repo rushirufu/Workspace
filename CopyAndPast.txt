@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+        width: auto;
+      }
+
+      .bg {
+        opacity: 0.9;
+        height: 100%;
+        width: auto;
+        /* background-image: url("https://pixabay.com/get/52e9d5454a55ab14f6d1867dda6d49214b6ac3e456597241732c7ed595/away-4906077_1920.jpg"); */
+        background-image: url("https://images3.alphacoders.com/103/1039332.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .titulo {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <p class="titulo">
+        Excepteur minim culpa fugiat deserunt elit magna. Proident sunt dolor
+        mollit pariatur amet ipsum tempor adipisicing magna ea aute officia
+        ullamco excepteur. Exercitation aliqua in do mollit culpa eiusmod in
+        pariatur nisi in quis laboris excepteur ullamco. Velit voluptate mollit
+        officia ad labore excepteur dolor labore aute sint amet velit veniam
+        velit. Incididunt magna eiusmod qui incididunt sit enim ex enim occaecat
+        pariatur incididunt labore. Eu sit in deserunt magna sunt pariatur
+        occaecat nisi.
+      </p>
+      <br />
+      <p>
+        Ex eiusmod sit irure velit do proident aliqua mollit ipsum adipisicing
+        sit. Ea proident ullamco ad mollit commodo ullamco sit magna et veniam
+        sint proident commodo amet. Nulla proident labore officia aliquip.
+        Mollit eiusmod minim occaecat consequat nostrud nulla. Excepteur duis ad
+        irure et consequat enim duis eu laborum. Est laboris ut elit incididunt
+        mollit esse et id exercitation Lorem quis amet laboris adipisicing.
+        Incididunt reprehenderit veniam ut Lorem est id.
+      </p>
+    </div>
+  </body>
+</html> 

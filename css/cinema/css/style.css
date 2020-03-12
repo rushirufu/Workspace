@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* Location of the image */
+  background-image: url("https://wallpapercave.com/wp/VmN49xl.jpg");
+  width: 100%;
+  height: 100vh;
+
+  /* Image is centered vertically and horizontally at all times */
+  background-position: top;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  opacity: 0.9;
+}
