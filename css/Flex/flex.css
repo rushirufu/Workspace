@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(144, 144, 144);
+}
+body {
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  width: 70%;
+  text-align: center;
+  /* line-height: 2; */
+
+  margin: 0 auto; /* Alinear documento verticalmente*/
+}
+.container {
+  border: 8px solid red;
+}
+.container-item {
+  border: 8px solid blue;
+  margin: 5px;
+  padding: 3px;
+}
+
+/*  flex-direction */
+.flex {
+  display: flex;
+}
+
+.rs {
+  flex-direction: row-reverse;
+}
+
+.c {
+  flex-direction: column;
+}
+
+.cr {
+  flex-direction: column-reverse;
+}
+.Ejemplo2 {
+  border: 8px solid red;
+}
+.e2-item {
+  margin: 0px;
+  padding: 0px;
+  background-color: blue;
+  margin: 5px;
+
+  width: 65px;
+  height: 65px;
+  text-align: center;
+}
+
+/*  flex-flow  */
+.flex-flow {
+}
