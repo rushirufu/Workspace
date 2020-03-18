@@ -551,27 +551,14 @@
     <br />
     <h1>flex-shrink</h1>
     <p>
-      La propiedad flex-shrink especifica cómo se reducirá el elemento en
-      relación con el resto de los elementos flexibles dentro del mismo
+      La propiedad flex-shrink propiedad especifica cómo se reducirá el elemento
+      en relación con el resto de los elementos flexibles dentro del mismo
       contenedor.
     </p>
-    <p>
-      Flex-shrink funciona de manera muy similar a flex-grow, solo que en lugar
-      de tratar con espacio extra, trata con el espacio que no necesita un
-      contenido de elementos. Un elemento con un valor de contracción flexible
-      de 0 no se reducirá a medida que nuestra página se haga más pequeña. Esto
-      solo es cierto si no hay un valor de crecimiento flexible en este
-      elemento. Si hay un valor de crecimiento flexible, el elemento no se
-      reducirá más pequeño que su contenido. Un elemento con un valor de
-      encogimiento flexible de 1 se encogerá, pero no será más pequeño que su
-      contenido. Si tiene más de un elemento por línea, se considerará el número
-      total de valores de contracción flexible, al dividir por cuánto debe
-      reducirse cada elemento.
-    </p>
+
     <div class="flex-shrink">
-      <div class="flex-shrink-item"><h1>A</h1></div>
-      <div class="flex-shrink-item"><h1>B</h1></div>
-      <div class="flex-shrink-item"><h1>C</h1></div>
+      <div class="flex-shrink-item shrink1"><h1>A</h1></div>
+      <div class="flex-shrink-item shrink2"><h1>B</h1></div>
     </div>
     <br />
     <br />

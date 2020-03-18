@@ -187,6 +187,21 @@ p {
 }
 
 .flex-shrink {
+  display: flex;
+  border: red solid 8px;
+  margin: 5px;
 }
 .flex-shrink-item {
+  background-color: blue;
+
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.shrink1 {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.shrink2 {
 }
