@@ -516,5 +516,64 @@
         <h1>E</h1>
       </div>
     </div>
+    <br />
+    <br />
+    <h1>flex-grow</h1>
+    <p>
+      La propiedad flex-grow especifica cuánto crecerá el artículo en relación
+      con el resto de los artículos flexibles dentro del mismo contenedor.
+    </p>
+    <p>
+      Flex-grow le dice a nuestro elemento si puede o no ocupar espacio
+      adicional. Cuando establecemos un valor de crecimiento flexible de 1 o
+      mayor, le estamos diciendo a nuestro elemento que crezca para ocupar el
+      espacio disponible. Un elemento con un valor de crecimiento flexible
+      establecido en 0 no crecerá para ocupar espacio disponible. Si tenemos más
+      de un elemento en una línea (fila o columna) que tiene un valor de
+      crecimiento flexible, estos elementos compartirán el espacio disponible.
+      El número total de valores de crecimiento flexible se sumará para crear el
+      "pastel completo". Quédese aquí conmigo. Digamos que tenemos dos elementos
+      uno al lado del otro. Un elemento tiene un crecimiento flexible de 2, y el
+      otro tiene un crecimiento flexible de 1. El número total de unidades de
+      crecimiento flexible será 3. El espacio disponible en el contenedor
+      flexible se divid`irá por 3, y distribuido en consecuencia. El primer
+      elemento (flex-grow: 2;) obtendrá 2 piezas del espacio disponible, y el
+      segundo elemento (flex-grow: 1;) obtendrá 1 pieza del espacio disponible.
+      Esto no significa que el primer elemento sea el doble de grande que el
+      segundo. ¡Recuerde que recibirá 2/3 del pastel de espacio
+    </p>
+    <div class="flex-grow">
+      <div class="flex-grow-item"><h1>A</h1></div>
+      <div class="flex-grow-item"><h1>B</h1></div>
+      <div class="flex-grow-item"><h1>C</h1></div>
+    </div>
+    <br />
+    <br />
+    <h1>flex-shrink</h1>
+    <p>
+      La propiedad flex-shrink especifica cómo se reducirá el elemento en
+      relación con el resto de los elementos flexibles dentro del mismo
+      contenedor.
+    </p>
+    <p>
+      Flex-shrink funciona de manera muy similar a flex-grow, solo que en lugar
+      de tratar con espacio extra, trata con el espacio que no necesita un
+      contenido de elementos. Un elemento con un valor de contracción flexible
+      de 0 no se reducirá a medida que nuestra página se haga más pequeña. Esto
+      solo es cierto si no hay un valor de crecimiento flexible en este
+      elemento. Si hay un valor de crecimiento flexible, el elemento no se
+      reducirá más pequeño que su contenido. Un elemento con un valor de
+      encogimiento flexible de 1 se encogerá, pero no será más pequeño que su
+      contenido. Si tiene más de un elemento por línea, se considerará el número
+      total de valores de contracción flexible, al dividir por cuánto debe
+      reducirse cada elemento.
+    </p>
+    <div class="flex-shrink">
+      <div class="flex-shrink-item"><h1>A</h1></div>
+      <div class="flex-shrink-item"><h1>B</h1></div>
+      <div class="flex-shrink-item"><h1>C</h1></div>
+    </div>
+    <br />
+    <br />
   </body>
 </html>

@@ -67,3 +67,5 @@
     </div>
   </body>
 </html> 
+
+https://css-tricks.com/almanac/properties/f/flex-shrink/
