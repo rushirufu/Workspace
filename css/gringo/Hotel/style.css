@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #3333;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  padding: 20px;
+}
+
+#navbar {
+  background-color: #3333;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+
+preguntas https://linuxhint.com/install_visual_studio_code_debian_10/  
+$ sudo apt install ./code*.deb
+apt install nodejs npm
+
+
+sudo apt-get install rar
+apt-get install vlc
+sudo apt-get install default-jre
+java -jar /path/to/RuneLite.jar
+
+--------
+Try deleting default settings file, Its located at:
+
+Windows %APPDATA%\Code\User\settings.json
+macOS $HOME/Library/Application Support/Code/User/settings.json
+Linux $HOME/.config/Code/User/settings.json
+If that does not help, try deleting extensions located at:
+
+Windows %USERPROFILE%\.vscode\extensions
+macOS ~/.vscode/extensions
+Linux ~/.vscode/extensions 
+-------------
+
+git
+  git config --global user.email "aguiar_moises@hotmail.com"
+  git config --global user.name "Desktop"
+git config --list
+
+
+
+
+
+
+
+
+
+
+////////////
+
+/////////
+youtube.com/watch?v=UQtZVQlF-0s&list=PLhSj3UTs2_yX_ct0OfHrmMwKL8wpz-N2j&index=6
