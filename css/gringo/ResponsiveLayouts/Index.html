@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: grey;
+      color: #fff;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    /* Smartphones */
+    @media only screen and(max-width: 500px) {
+      body {
+        background-color: red;
+      }
+      #smartphone h1 {
+        display: block;
+      }
+    }
+
+    /* Tablets */
+    @media (min-width: 501px) and(max-width: 768px) {
+      body {
+        background-color: blue;
+      }
+      #tablet h1 {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <div id="pantalla-ancha"><h1>Pantalla Ancha</h1></div>
+    <div id="pantalla-normal"><h1>Pantalla Normal</h1></div>
+    <div id="smartphone"><h1>Smartphone</h1></div>
+    <div id="tablet"><h1>Tablets</h1></div>
+    <div id="landscape"><h1>landscape</h1></div>
+  </body>
+</html>
