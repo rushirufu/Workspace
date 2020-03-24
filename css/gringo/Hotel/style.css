@@ -9,11 +9,26 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
 }
+.bg-dark {
+  color: #fff;
+  background-color: #333;
+}
+
+.bg-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.bg-primary {
+  color: #f7c08a;
+  background-color: #333;
+}
 
 a {
   color: #3333;
   text-decoration: none;
 }
+
 h1,
 h2,
 h3 {
@@ -21,7 +36,7 @@ h3 {
 }
 
 #navbar {
-  background-color: #3333;
+  background-color: #333;
   color: #fff;
   overflow: auto;
 }
@@ -47,4 +62,130 @@ h3 {
   display: block;
   padding: 20px;
   text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background-color: #444;
+  color: #f7c08a;
+}
+
+.container {
+  /* border: solid 5px aqua; */
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+#showcase {
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/10/01/03/hotel-1447197_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  /* filter: brightness(0.4); */
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.9em;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  background-color: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #f7c08a;
+  color: #333;
+}
+
+/* .btn-primary {
+  background-color: #333;
+  color: #fff;
+} */
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Home info */
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/26/20/30/hotel-1623064_960_720.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  background-color: #333;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+#home-info .info-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Features */
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+.clr {
+  clear: both;
+}
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
 }
