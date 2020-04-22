@@ -1,4 +1,4 @@
-#PostgreSQL
+# PostgreSQL
 
 ```sql
 select * from alumnos
