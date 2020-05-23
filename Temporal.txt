@@ -1,0 +1,111 @@
+
+
+[
+  {
+    "top": 243,
+    "left": 90,
+    "z_index": 0,
+    "tool": "table",
+    "width": "600",
+    "rows": "4",
+    "columns": "6",
+    "header": true,
+    "values": [
+      [
+        "lorem",
+        "ipsum",
+        "do32lor",
+        "",
+        "",
+        ""
+      ],
+      [
+        "sit",
+        "amet",
+        "lorem",
+        "",
+        "",
+        ""
+      ],
+      [
+        "ipsum",
+        "dolor",
+        "sit",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "top": 243,
+    "left": 90,
+    "z_index": 0,
+    "tool": "table",
+    "width": "600",
+    "rows": "4",
+    "columns": "6",
+    "header": true,
+    "values": [
+      [
+        "lorem",
+        "ipsum",
+        "do32lor",
+        "",
+        "",
+        ""
+      ],
+      [
+        "sit",
+        "amet",
+        "lorem",
+        "",
+        "",
+        ""
+      ],
+      [
+        "ipsum",
+        "dolor",
+        "sit",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  }
+]
+////////////////
+
+Titulo
+Descripcion
+Categoria
+Prioridad
+Estado  - Abierto
+        - Cerrado
+        - Cancelado
+        - Transferido
+https://fatiherikli.github.io/mockup-designer/?textarea=#document/0c5e27f9-3d9d-61c8-53c6-2fc4d347b855
+https://wireframepro.mockflow.com/editor.jsp?editor=on&publicid=M1512c1d6bbdec1660fff40eca7e15b941590265032783&perm=Create&projectid=M865dcd7ad43491e3d0fc4374e4ae212e1590265069603&ptitle=edwdqwd&bgcolor=white&category=Deae3e779dc4599261fe550d7f7540bb8&store=yes#/page/b794c0ac2e1545f8a205b818d1995b4b
+
+If you want **both** the artist_name and the artist_id, in that order, you’d use:
+
+Even though this appears pointless, it can be useful when combined with aliases in more advanced queries, as we show in Chapter 7.
+
+
+explains,often
