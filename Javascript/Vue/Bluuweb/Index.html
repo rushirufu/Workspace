@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue</title>
+    <!-- production version, optimized for size and speed -->
+  </head>
+  <body>
+    <div id="App">
+      <h1>{{Titulo}}</h1>
+      <h2>{{tituloArray}}</h2>
+      <input type="text" v-model="inputFrutas" @keyup.enter="agregarFrutas" />
+      <button @click="agregarFrutas">Click me!</button>
+
+      <div v-for="x of arrayFrutas">
+        <span v-if="arrayFrutas.length == ''">
+          No hay datos para mostrar
+        </span>
+        {{x}}
+      </div>
+
+      <h2>{{tituloObjeto}}</h2>
+      <input type="text" v-model="inputObFruta" />
+      <input
+        type="text"
+        v-model="inputObCantidad"
+        @keyup.enter="agregarItemObjetoFruta"
+      />
+      <button @click="agregarItemObjetoFruta">Agregar</button>
+      <br />
+      <div>
+        <table style="width: 100%;">
+          <tr>
+            <th>Nombre de la Fruta</th>
+            <th>Cantidad</th>
+          </tr>
+          <tr v-for="item of objetoFrutas">
+            <td>{{item.nombreFruta}}</td>
+            <td>
+              <button @click="item.cantidad--">-</button>
+              <input v-model="item.cantidad" type="number" />
+              <button @click="item.cantidad++">+</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./01.js"></script>
+  </body>
+</html>
