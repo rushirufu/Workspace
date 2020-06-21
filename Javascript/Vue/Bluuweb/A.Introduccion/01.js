@@ -6,15 +6,16 @@ const application = new Vue({
     tituloObjeto: "Objeto Frutas: ",
     arrayFrutas: [],
     objetoFrutas: [
-      { nombreFruta: "Manzana", cantidad: 0 },
+      { nombreFruta: "Manzana", cantidad: 1 },
       { nombreFruta: "Pera", cantidad: 2 },
       { nombreFruta: "Durazno", cantidad: 3 },
-      { nombreFruta: "Melon", cantidad: 3 },
-      { nombreFruta: "Coco", cantidad: 3 },
+      { nombreFruta: "Melon", cantidad: 4 },
+      { nombreFruta: "Coco", cantidad: 5 },
     ],
     inputFrutas: "",
     inputObFruta: "asdasd",
     inputObCantidad: "",
+    totalFrutas: 999999,
   },
   methods: {
     agregarFrutas() {
@@ -30,6 +31,15 @@ const application = new Vue({
       });
       this.inputObFruta = "";
       this.inputObCantidad = "";
+    },
+  },
+  computed: {
+    sumarFrutas() {
+      this.totalFrutas = 0;
+      for (x of this.objetoFrutas) {
+        this.totalFrutas = this.totalFrutas + x.cantidad;
+      }
+      return this.totalFrutas;
     },
   },
 });

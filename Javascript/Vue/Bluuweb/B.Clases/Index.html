@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue</title>
+    <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="App" class="container mt-5">
+      <div :class="[fondo, 'pt-5', 'text-white', 'pt-5']">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quia
+          praesentium nam laboriosam distinctio fugit expedita amet ad ullam
+          totam. Temporibus libero distinctio ipsa soluta, laborum iste fuga
+          ducimus tempore!
+        </p>
+      </div>
+      <input type="text" class="form-control" v-model="fondo" />
+
+      <div
+        class="text-white p-3"
+        :class="{'bg-dark' : color, 'bg-success' : !color}"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, molestiae
+          quia? Praesentium, quod? Earum magnam dicta laborum animi eum
+          accusamus rem possimus officia, maiores molestias, rerum aliquam nemo
+          illum exercitationem!
+        </p>
+      </div>
+      <button class="btn btn-primary" @click="color = !color">
+        Cambiar Color
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
