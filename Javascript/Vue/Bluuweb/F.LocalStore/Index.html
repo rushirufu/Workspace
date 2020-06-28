@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue</title>
+    <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="App" class="container">
+      {{titulo}}
+      <input
+        type="text"
+        class="form-control my-3"
+        v-model="nuevaTarea"
+        v-on:keyup.enter="agregarTarea"
+      />
+      <button class="btn btn-primary" @click="agregarTarea">Agregar</button>
+      <h5>{{nuevaTarea}}</h5>
+
+      <div class="alert alert-primary" role="alert">
+        a simple primary alert-check it uot!
+      </div>
+    </div>
+    <script>
+      new Vue({
+        el: "#App",
+        data: {
+          titulo: "Titulo de la App",
+          tareas: [],
+          nuevaTarea: "",
+        },
+        methods: {
+          agregarTarea: function () {
+            this.tareas.push({
+              nombre: this.nuevaTarea,
+              estado: false,
+            });
+            console.log(this.tareas);
+
+            // console.log("prueba", this.nuevaTarea);
+            this.nuevaTarea = "";
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
