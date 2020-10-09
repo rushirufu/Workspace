@@ -8,7 +8,7 @@
         href="https://cli.vuejs.org"
         target="_blank"
         rel="noopener"
-      >vue-cli documentation test</a>.
+      >vue-cli documentation test v2</a>.
     </p>
   </div>
 </template>
