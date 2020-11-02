@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class employee(models.Model):
+class Employee(models.Model):
     nameOne = models.CharField(max_length=20)
     nameTwo = models.CharField(max_length=20)
     nameThere = models.CharField(max_length=20)
