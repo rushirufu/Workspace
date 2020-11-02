@@ -23,3 +23,7 @@ python manage.py shell
  pip install djangorestframework
 
  8) crear "serializer.py" en nuestra app employee
+
+ 9) crear viewsets.py
+
+ 10) crear urls.py
