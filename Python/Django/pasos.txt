@@ -1,0 +1,17 @@
+1) crear proyecto>
+django-admin startproject WebApp
+
+2) Correr servidor>
+python manage.py runserver
+
+3) Generar nueva aplicacion>
+django-admin startapp employee
+
+4) crear un modelo en la nueva app
+class employee(models.Model):
+    nameOne = models.CharField(max_length=20)
+    surnameOne = models.CharField(max_length=20)
+
+5) crear migraciones
+python manage.py migrate
+python manage.py makemigrations
