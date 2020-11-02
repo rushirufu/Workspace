@@ -15,3 +15,11 @@ class employee(models.Model):
 5) crear migraciones
 python manage.py migrate
 python manage.py makemigrations
+
+6) shell de python
+python manage.py shell
+
+7) Instalar rest framework y agregarlo a settings
+ pip install djangorestframework
+
+ 8) crear "serializer.py" en nuestra app employee
