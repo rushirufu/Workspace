@@ -36,6 +36,8 @@ namespace apiProject
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+
+            app.UseMvc();
         }
     }
 }
