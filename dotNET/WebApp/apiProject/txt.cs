@@ -1,0 +1,9 @@
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
+// 1) dotnet new web --name apiProject
