@@ -155,7 +155,7 @@ namespace LearningLinQ
             }
             Console.WriteLine("**********************");
 
-            string[] ArrayPostres = { "Pie de Manzana", "Pie de Limon", "Chocolate con Manzana", "Mermelada de limon", "Mermelada de pina", "Mermelada de Manzana", "Pie de pera" };
+            string[] ArrayPostres = { "Pie de Manzana", "Pie de Limon", "Chocolate con Manzana", "Mermelada de limon", "Mermelada de pina", "Mermelada de Manzana", "Pie de pera", "Torta de Aguacate", "Mermelada de aguacate" };
 
             IEnumerable<string> PostresConManza =
                 from i in ArrayPostres
@@ -229,8 +229,47 @@ namespace LearningLinQ
             bool TieneElementos2 = numeros.Any(x => x % 100 == 0);
             Console.WriteLine("[La sencuencia tiene un elementos divisible entre 100?]: {0}", TieneElementos2);
 
-            IEnumerable<string> QueryPostres = ArrayPostres.OrderBy(x => x.Split().Last());
-            
+            // IEnumerable<string> QueryPostres = ArrayPostres.where(x => x.Split().Last());
+            IEnumerable<string> QueryPostres = (from x in ArrayPostres
+                                                orderby x.Split().Last()
+                                                select x);
+
+            var metodoQuery = ArrayPostres.OrderBy(x => x.Split().Last());
+            Console.WriteLine("_________________");
+
+            Console.WriteLine("Coleccion Original:");
+            foreach (var item in ArrayPostres)
+            {
+                Console.WriteLine(">" + item);
+            }
+            Console.WriteLine("_________________");
+            Console.WriteLine("Colleccion con Split().Last():");
+            foreach (var item in QueryPostres)
+            {
+                Console.WriteLine("-" + item);
+            }
+            Console.WriteLine("_________________");
+
+            Console.WriteLine("Colleccion con Metodo query ArrayPostres.OrderBy(x => x.Split().Last());");
+            foreach (var item in metodoQuery)
+            {
+                Console.WriteLine("-" + item);
+            }
+            Console.WriteLine("_________________");
+
+            int[] ArregloDeNumeros = { 19, 14, 56, 32, 11, 8, 45, 7, 18, 2, 17, 23 };
+            IEnumerable<int> Resultado1 = from i in ArrayDeNumeros
+                                          where i < ArregloDeNumeros.First()
+                                          select i;
+
+            foreach (int element in Resultado1)
+            {
+                Console.WriteLine("Los numeros menores a 19 son:{0}", element);
+            }
+
+            IEnumerable<int> Resultado2 =
+            ArregloDeNumeros.Where(x => x <= (ArregloDeNumeros.Where(x => x % 2 == 0)).First());
+
         }
     }
 }
