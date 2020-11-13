@@ -266,9 +266,16 @@ namespace LearningLinQ
             {
                 Console.WriteLine("Los numeros menores a 19 son:{0}", element);
             }
+            Console.WriteLine("////////////////////////");
 
             IEnumerable<int> Resultado2 =
             ArregloDeNumeros.Where(x => x <= (ArregloDeNumeros.Where(x => x % 2 == 0)).First());
+
+            foreach (var item in Resultado2)
+            {
+                Console.WriteLine(item);
+            }
+
 
         }
     }
