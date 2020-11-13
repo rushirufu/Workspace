@@ -331,7 +331,6 @@ namespace LearningLinQ
                 let manzanitas = (
                     from m1 in ArrayPostres
                     where m1.Contains("Manzana")
-                    orderby m1
                     select m1
                 )
                 where manzanitas.Contains("Pie")
@@ -341,7 +340,9 @@ namespace LearningLinQ
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine("xx");
-        }
-    }
-}
+            Console.WriteLine("no lo se ");
+            Filtros OPC = new Filtros();
+            OPC.imprimir();
+        }//Main
+    }// Programa
+}//NameSpace
