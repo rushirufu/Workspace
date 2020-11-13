@@ -155,7 +155,7 @@ namespace LearningLinQ
             }
             Console.WriteLine("**********************");
 
-            string[] ArrayPostres = { "Pie de Manzana", "Pie de Limon", "Chocolate con Manzana", "Mermelada de limon", "Mermelada de pina", "Mermelada de Manzana", "Pie de pera", "Torta de Aguacate", "Mermelada de aguacate" };
+            string[] ArrayPostres = { "Pie de Manzana", "Pie de Limon", "Chocolate con Manzana", "Mermelada de limon", "Mermelada de pina", "Mermelada de Manzana", "Pie de pera", "Torta de Aguacate", "Mermelada de aguacate", "Pie de Pera", "Pie de Manzana2" };
 
             IEnumerable<string> PostresConManza =
                 from i in ArrayPostres
@@ -275,8 +275,73 @@ namespace LearningLinQ
             {
                 Console.WriteLine(item);
             }
+            bool Mayusculas = true;
+            Console.WriteLine("=======================");
+            IEnumerable<string> Resultado3;
+            var Manzanas = ArrayPostres.Where(x => x.Contains("Manzana"));
+            var ManzadasOrdernadas = Manzanas.OrderBy(x => x);
+            if (Mayusculas)
+            {
+                Resultado3 = ManzadasOrdernadas.Select(x => x.ToUpper());
+            }
+            else
+            {
+                Resultado3 = ManzadasOrdernadas;
+            }
 
+            foreach (var item in Resultado3)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("***************************");
+            // Forma N1
+            IEnumerable<string> QueryProgresivo = from i in ArrayPostres
+                                                  where i.Contains("Manzana")
+                                                  orderby i
+                                                  select i
+                                                  into pie
+                                                  where pie.Contains("Pie")
+                                                  select pie;
+            foreach (var item in QueryProgresivo)
+            {
+                Console.WriteLine(item);
+            }
+            //Forma N2
 
+            Console.WriteLine("????????????????????????????");
+
+            IEnumerable<string> QueryProgresivo2 =
+            from i in (
+                from i in ArrayPostres
+                where i.Contains("Manzana")
+                orderby i
+                select i)
+            where i.Contains("Pie")
+            select i;
+
+            foreach (var item in QueryProgresivo2)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("________________");
+
+            // USO DE LET
+            IEnumerable<string> QueryProgresivo3 =
+                from i in ArrayPostres
+                let manzanitas = (
+                    from m1 in ArrayPostres
+                    where m1.Contains("Manzana")
+                    orderby m1
+                    select m1
+                )
+                where manzanitas.Contains("Pie")
+                select i;
+
+            foreach (var item in QueryProgresivo3)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("xx");
         }
     }
 }
