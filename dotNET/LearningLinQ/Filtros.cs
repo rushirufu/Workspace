@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LearningLinQ
 {
@@ -14,9 +15,21 @@ namespace LearningLinQ
         #endregion
         string[] postres = { "pay de manzana", "pastel de chocolate", "manzana caramelizada", "fresas con crema", "pay de pera con manzana" };
 
+        public Filtros()
+        {
+            IEnumerable<string> x = postres.Where((n, i) => i % 2 == 0);
+            // IEnumerable<string> xy = postres.Where(a, b);
+            // var indice = 
+            // from i in postres
+            // select i.IndexOf();
+
+
+            //Console.WriteLine("imprimir");
+
+        }
         public void imprimir()
         {
-            Console.WriteLine("imprimir");
+
         }
         IEnumerable<string> x;
 
