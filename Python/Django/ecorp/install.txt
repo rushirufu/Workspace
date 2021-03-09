@@ -1,0 +1,4 @@
+python pip install virtualenv
+python pip install django
+python pip install inipath
+python pip install djangorestframework
