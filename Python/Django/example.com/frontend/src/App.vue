@@ -1,19 +1,22 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+<v-app>
+  <v-app-bar app></v-app-bar>
+  <v-main>
+    <v-container>
+      Hello World
+    </v-container>
+  </v-main>
+</v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import Layout from './components/Layout';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+
   },
 
   data: () => ({
